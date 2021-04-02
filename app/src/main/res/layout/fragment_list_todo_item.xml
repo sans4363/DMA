@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Title:"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text="@string/edit_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Date:"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            tools:text="2020 March 15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Description:"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            tools:text="This is the description for the todo item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/priority_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:textStyle="bold"
+            tools:text="Priority 5" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Status:"
+            android:textAlignment="textEnd"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/complete_tv"
+            android:layout_width="94dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            tools:text="Is complete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/delete_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#7E322514"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Delete"
+            android:textColor="#FAF8F8"
+            android:textStyle="bold"
+            app:backgroundTint="#322514"
+            tools:text="Set complete" />
+
+        <Button
+            android:id="@+id/update_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7E322514"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Update"
+            android:textColor="#FAFAFA"
+            android:textStyle="bold"
+            app:backgroundTint="#322514"
+            tools:text="Set complete" />
+
+        <Button
+            android:id="@+id/complete_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0"
+            android:background="#7E322514"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Set Complete"
+            android:textColor="#FBFBFA"
+            android:textStyle="bold"
+            app:backgroundTint="#322514"
+            tools:text="Set complete" />
+
+    </LinearLayout>
+
+</LinearLayout>

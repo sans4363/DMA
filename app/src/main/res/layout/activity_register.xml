@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.auth.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e75874"
+        tools:layout_editor_absoluteY="48dp">
+
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="cursive"
+            android:hint="Username"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#fbcbc9"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:text="username" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#fbcbc9"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_et"
+            tools:text="password" />
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#fbcbc9"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_et"
+            app:layout_constraintVertical_bias="0.024"
+            tools:text="Email" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="173dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="36dp"
+            android:background="#fbcbc9"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="#e75874"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_et"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="76dp"
+            android:background="#030C0000"
+            android:fontFamily="@font/berkshire_swash"
+            android:text=">>Back to Login Page"
+            android:textColor="#fbcbc9"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_btn"
+            app:layout_constraintVertical_bias="0.927" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="306dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="196dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Registration Page"
+            android:textColor="#fbcbc9"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

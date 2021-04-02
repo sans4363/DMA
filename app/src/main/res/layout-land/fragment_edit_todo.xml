@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbcbc9 "
+    android:orientation="vertical"
+    tools:context=".fragments.EditTodoFragment">
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_name"
+        android:layout_width="329dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="@string/edit_title"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#e75874"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_fragment_txt_description"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_description"
+        android:layout_width="325dp"
+        android:layout_height="119dp"
+        android:height="150dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="@string/edit_description"
+        android:inputType="textMultiLine|textPersonName"
+        android:lines="5"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColor="#e75874"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_date"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="@string/edit_date"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#e75874"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_fragment_txt_description"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="cursive"
+        android:text="Select Priority"
+        android:textAlignment="center"
+        android:textColor="#be1558"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/edit_fragment_rg_priority"
+        android:layout_width="312dp"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_fragment_txt_description"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_high"
+            android:fontFamily="cursive"
+            android:text="@string/edit_high"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_medium"
+            android:fontFamily="cursive"
+            android:text="@string/edit_medium"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_low"
+            android:fontFamily="cursive"
+            android:text="@string/edit_low"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/edit_fragment_chk_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Check if Complete"
+        android:textColor="#be1558"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_fragment_btn_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/edit_fragment_txt_description"
+        app:layout_constraintTop_toBottomOf="@+id/edit_fragment_rg_priority"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_fragment_btn_save"
+        android:layout_width="110dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        android:text="@string/edit_save"
+        android:textColor="#fbcbc9 "
+        app:backgroundTint="#e75874"
+        app:layout_constraintEnd_toEndOf="@+id/edit_fragment_chk_complete"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="@+id/edit_fragment_chk_complete"
+        app:layout_constraintTop_toBottomOf="@+id/edit_fragment_rg_priority" />
+
+    <Button
+        android:id="@+id/edit_fragment_btn_cancel"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="@string/cancel"
+        android:textColor="#fbcbc9 "
+        app:backgroundTint="#e75874"
+        app:layout_constraintEnd_toEndOf="@+id/edit_fragment_btn_save"
+        app:layout_constraintStart_toStartOf="@+id/edit_fragment_btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/edit_fragment_btn_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
